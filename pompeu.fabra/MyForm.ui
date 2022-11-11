@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyForm</class>
+ <widget class="QWidget" name="MyForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>954</width>
+    <height>726</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IDI-Lab</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="MyGLWidget" name="widget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Escoger Cubo</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_4">
+            <property name="text">
+             <string>Cubo1</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_3">
+            <property name="text">
+             <string>Cubo2</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_2">
+            <property name="text">
+             <string>Cubo3</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Escoger Cámara</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton">
+            <property name="text">
+             <string>Ortogonal</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_5">
+            <property name="text">
+             <string>Perspectiva</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>&amp;Sortir</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyGLWidget</class>
+   <extends>QWidget</extends>
+   <header>MyGLWidget.h</header>
+   <container>1</container>
+   <slots>
+    <signal>reinicia()</signal>
+    <signal>cambioOrtogonal()</signal>
+    <signal>cambioPerspectiva()</signal>
+    <slot>cambiar3()</slot>
+    <slot>cambiar2()</slot>
+    <slot>cambiar1()</slot>
+    <slot>cambiar_ortogonal()</slot>
+    <slot>cambiar_perspectiva()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MyForm</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>881</x>
+     <y>715</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>839</x>
+     <y>529</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>widget</receiver>
+   <slot>cambiar1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>875</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>718</x>
+     <y>51</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>widget</receiver>
+   <slot>cambiar2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>883</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>730</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>widget</receiver>
+   <slot>cambiar3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>884</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>783</x>
+     <y>123</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>widget</receiver>
+   <slot>cambiar_ortogonal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>904</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>733</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>widget</receiver>
+   <slot>cambiar_perspectiva()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>871</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>770</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>widget</sender>
+   <signal>reinicia()</signal>
+   <receiver>radioButton_4</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>560</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>910</x>
+     <y>48</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>widget</sender>
+   <signal>reinicia()</signal>
+   <receiver>radioButton_5</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>572</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>909</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>widget</sender>
+   <signal>cambioOrtogonal()</signal>
+   <receiver>radioButton</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>613</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>909</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>widget</sender>
+   <signal>cambioPerspectiva()</signal>
+   <receiver>radioButton_5</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>679</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>926</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

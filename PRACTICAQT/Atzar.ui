@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Atzar</class>
+ <widget class="QWidget" name="Atzar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>867</width>
+    <height>516</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Atzar</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="MyQButton" name="pushButton_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>1</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="MyQButton" name="pushButton_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="MyQButton" name="pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="MyQGLCD" name="lcdNumber">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::MinimumExpanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="text">
+        <string>&amp;RESET</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="MyQButton" name="pushButton_4">
+       <property name="text">
+        <string>&amp;START</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="text">
+        <string>&amp;EXIT</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyQButton</class>
+   <extends>QPushButton</extends>
+   <header>MyQButton.h</header>
+   <slots>
+    <signal>SendColor(QString)</signal>
+    <signal>Trio()</signal>
+    <signal>c1(QString)</signal>
+    <signal>c2(QString)</signal>
+    <signal>c3(QString)</signal>
+    <signal>xd(QString*)</signal>
+    <slot>paint()</slot>
+    <slot>resetColor()</slot>
+    <slot>start()</slot>
+    <slot>justpaint(QString)</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>MyQGLCD</class>
+   <extends>QLCDNumber</extends>
+   <header>MyQGLCD.h</header>
+   <slots>
+    <slot>button1(QString)</slot>
+    <slot>button2(QString)</slot>
+    <slot>button3(QString)</slot>
+    <slot>RRReset()</slot>
+    <slot>MUDAMUDA()</slot>
+    <slot>start(QString*)</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>Atzar</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>811</x>
+     <y>476</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>437</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>paint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>40</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>98</x>
+     <y>22</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_3</receiver>
+   <slot>paint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>307</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>339</x>
+     <y>16</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton</receiver>
+   <slot>paint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>632</x>
+     <y>11</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>688</x>
+     <y>14</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>resetColor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>51</x>
+     <y>476</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>18</x>
+     <y>31</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_3</receiver>
+   <slot>resetColor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>31</x>
+     <y>476</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>331</x>
+     <y>40</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton</receiver>
+   <slot>resetColor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>62</x>
+     <y>476</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>SendColor(QString)</signal>
+   <receiver>lcdNumber</receiver>
+   <slot>button2(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>543</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>538</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>lcdNumber</receiver>
+   <slot>RRReset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>496</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>53</x>
+     <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>SendColor(QString)</signal>
+   <receiver>lcdNumber</receiver>
+   <slot>button1(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>242</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>243</x>
+     <y>59</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>SendColor(QString)</signal>
+   <receiver>lcdNumber</receiver>
+   <slot>button3(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>819</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>789</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_4</receiver>
+   <slot>start()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>405</x>
+     <y>476</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>463</x>
+     <y>475</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>Trio()</signal>
+   <receiver>lcdNumber</receiver>
+   <slot>MUDAMUDA()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>428</x>
+     <y>494</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>c1(QString)</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>justpaint(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>444</x>
+     <y>477</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>170</x>
+     <y>39</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>c2(QString)</signal>
+   <receiver>pushButton_3</receiver>
+   <slot>justpaint(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>446</x>
+     <y>495</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>40</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>c3(QString)</signal>
+   <receiver>pushButton</receiver>
+   <slot>justpaint(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>468</x>
+     <y>483</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>738</x>
+     <y>36</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>xd(QString*)</signal>
+   <receiver>lcdNumber</receiver>
+   <slot>start(QString*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>394</x>
+     <y>504</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>287</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
